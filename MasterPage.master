@@ -1,0 +1,68 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>HotRiches.com - The Internet Traffic Machine</title>
+    <style>
+    body, td, th, p
+    {
+        font-family: Arial, Helvetica, Sans-Serif, Serif;
+        font-size: 10pt;
+    }
+    h1
+    {
+        font-family: "Franklin Gothic Medium", Arial, Helvetica;
+        color: Gray;
+        border-bottom: 1px solid gray;
+        width: 100%;
+        font-size: 18pt;
+        font-weight: Normal;
+    }
+    </style>
+</head>
+<body bgcolor="#394F6F">
+    <form id="form1" runat="server">
+        <table width="760" border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td background="images/a.gif" valign="middle" align="left" style="padding-left: 37px;" width="760" height="100">
+<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=468 HEIGHT=60 SRC="http://adserving.budsinc.com/imp?z=4&s=9642&t=3&r=1"></IFRAME>
+                </td>
+            </tr>
+            <tr>
+                <td background="images/b.gif" style="padding-right: 48px; padding-left: 48px">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td valign="bottom" align="center"><img src="images/c.gif" /></td>
+            </tr>
+            <tr>
+            <td align="center">
+<!-- Begin StatsXP HTML Code -->
+<script src="http://svc.statsxp.com/statsxp.js" language="javascript" type="text/javascript"></script>
+<script language="javascript" type="text/javascript">
+  var xpSiteID = 6,
+  xpHTTPMethod = "<%= Request.HttpMethod %>",
+  xpHTTPStatus= 200,
+  xp1="Content Page",
+  xp2="",
+  xp3="",
+  xp4="",
+  xp5="",
+  xpNoActiveX = 0;
+  StatsXP();
+</script>
+<!-- End StatsXP HTML Code -->
+            </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
